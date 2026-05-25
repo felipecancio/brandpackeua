@@ -18,18 +18,12 @@ export default function PricingCTA() {
 
           <h2 className="mb-6 text-3xl font-black uppercase italic leading-snug tracking-wide text-white md:text-5xl">
             <span className="flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 md:gap-x-3">
-              <span>SÓ</span>
-              <span>HOJE</span>
-              <span>DE</span>
-              <span className="text-red-300 decoration-red-400 decoration-[4px] line-through">
-                R$89,90
-              </span>
-            </span>
-            <span className="mt-3 flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 md:mt-4 md:gap-x-3">
+              <span>ACESSO</span>
+              <span>COMPLETO</span>
               <span>POR</span>
               <span>APENAS</span>
               <span className="inline-block bg-gradient-to-r from-lime-300 via-emerald-400 to-green-600 bg-clip-text pb-1 pr-1 text-transparent not-italic tracking-normal md:pr-1.5">
-                R$49,90
+                $8 USD
               </span>
             </span>
           </h2>
