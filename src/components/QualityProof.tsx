@@ -3,9 +3,9 @@ import { CheckCircle } from "lucide-react";
 import AcquireCtaButton from "./AcquireCtaButton";
 
 const checklist = [
-  { t: "Perfeito para DTF / Serigrafia", d: "Cores sólidas e bordas bem definidas." },
-  { t: "Vetores Escaláveis", d: "Amplie suas artes para o tamanho que quiser." },
-  { t: "ESTAMPAS ORIGINAIS", d: "Exclusivo para criar camisetas premium." },
+  { t: "High-resolution source files", d: "Prepared for sharper detail and cleaner edges." },
+  { t: "Scalable vector support", d: "Resize select artwork without sacrificing quality." },
+  { t: "Transparent-background PNGs", d: "Faster placement on tees, hoodies, and mockups." },
 ];
 
 function QualityImage({ className = "" }: { className?: string }) {
@@ -18,7 +18,7 @@ function QualityImage({ className = "" }: { className?: string }) {
     >
       <img
         src="/quality-dtf-print.png"
-        alt="Qualidade de estampa DTF em peça"
+        alt="Close-up of premium apparel print quality"
         className="w-full h-auto rounded-[40px] border border-white/10"
         draggable={false}
       />
@@ -29,8 +29,8 @@ function QualityImage({ className = "" }: { className?: string }) {
 function QualityHeading() {
   return (
     <h2 className="text-4xl md:text-6xl font-black text-white mb-8 tracking-tighter italic uppercase leading-none">
-      QUALIDADE PROFISSIONAL <br />
-      <span className="text-gray-500">PRONTA PARA IMPRESSÃO</span>
+      Built for clean <br />
+      <span className="text-gray-500">print output</span>
     </h2>
   );
 }
@@ -38,9 +38,9 @@ function QualityHeading() {
 function QualityParagraph() {
   return (
     <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-      Não perca clientes com artes pixeladas. Cada arquivo do{" "}
-      <span className="text-white font-bold">Criativarts Brands Pack</span> foi preparado em alta resolução,
-      garantindo cores vibrantes e bordas limpas para diferentes técnicas de impressão.
+      High-resolution files prepared to hold up from mockup to production. The archive is designed to help apparel
+      creators present cleaner visuals, place artwork faster, and deliver stronger print-ready results across multiple
+      workflows.
     </p>
   );
 }
@@ -66,14 +66,14 @@ function QualityList() {
 function QualityCta() {
   return (
     <div className="mt-12 flex justify-center">
-      <AcquireCtaButton complement="ACESSO IMEDIATO E VITALÍCIO" />
+      <AcquireCtaButton complement="Instant access. One-time payment." />
     </div>
   );
 }
 
 export default function QualityProof() {
   return (
-    <section className="py-24 bg-black overflow-hidden" id="calidad">
+    <section className="py-24 bg-black overflow-hidden" id="quality">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Mobile: título → párrafo → imagen → lista → testimonio */}
         <div className="flex flex-col gap-8 lg:hidden">

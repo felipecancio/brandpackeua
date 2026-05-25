@@ -3,19 +3,37 @@ import { PlusCircle } from "lucide-react";
 
 export default function FAQ() {
   const faqs = [
-    { q: "Como recebo o acesso?", a: "Após concluir o pagamento, você recebe automaticamente um link para uma pasta compartilhada no Google Drive, onde pode baixar todo o conteúdo de imediato." },
-    { q: "Existe mensalidade?", a: "Não. O acesso é vitalício com pagamento único. Sem mensalidades e sem custos escondidos." },
-    { q: "Posso usar as artes na minha marca?", a: "Sim. As artes podem ser usadas comercialmente em produtos físicos como camisetas, moletons, quadros, brindes e muito mais." },
-    { q: "Em quais formatos vêm os arquivos?", a: "A maior parte do material vem em PNG em alta resolução com fundo transparente e arquivos vetoriais/PDF prontos para impressão." },
-    { q: "Preciso de programas avançados?", a: "Não necessariamente. Como os arquivos PNG já vêm prontos, você pode usar em ferramentas simples como Canva ou enviar diretamente para sua estamparia." },
-    { q: "As artes são editáveis?", a: "Muitos arquivos incluem versões vetoriais para escalar sem perder qualidade e facilitar ajustes de cores ou tamanho em softwares como Illustrator ou Photoshop." }
+    {
+      q: "How is access delivered?",
+      a: "Right after checkout you receive an email with a link to the shared library, so you can start browsing and downloading immediately.",
+    },
+    {
+      q: "Is this a subscription?",
+      a: "No. It is a one-time payment with lifetime access to the archive.",
+    },
+    {
+      q: "Can I use the graphics for my brand or client projects?",
+      a: "Yes. The assets are intended for use on physical products and commercial apparel workflows.",
+    },
+    {
+      q: "Which file formats are included?",
+      a: "The library includes high-resolution PNG files, plus vector and PDF files where available.",
+    },
+    {
+      q: "Do I need advanced software?",
+      a: "Not necessarily. PNG files can be used in Canva or sent directly to your print partner. Vector files work best in Illustrator, Photoshop, or similar tools.",
+    },
+    {
+      q: "Will I be able to edit the designs?",
+      a: "Many assets include editable vector versions or easy-to-adapt layouts for resizing and color adjustments.",
+    },
   ];
 
   return (
     <section className="py-24 bg-black" id="faq">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black text-white italic">PERGUNTAS FREQUENTES</h2>
+          <h2 className="text-3xl md:text-5xl font-black text-white italic">Frequently Asked Questions</h2>
         </div>
 
         <div className="space-y-4">

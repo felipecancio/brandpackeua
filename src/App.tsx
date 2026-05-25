@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import MockupGrid from "./components/MockupGrid";
 import DesignGallery from "./components/DesignGallery";
+import WhatIsIncluded from "./components/WhatIsIncluded";
 import ClientTestimonials from "./components/ClientTestimonials";
 import Benefits from "./components/Benefits";
 import HowItWorks from "./components/HowItWorks";
@@ -25,6 +26,7 @@ export default function App() {
         <Hero />
         <MockupGrid />
         <DesignGallery />
+        <WhatIsIncluded />
         <ClientTestimonials />
         <Benefits />
         <QualityProof />

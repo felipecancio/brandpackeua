@@ -5,73 +5,73 @@ import AcquireCtaButton from "./AcquireCtaButton";
 const tiles = [
   {
     src: "/design-gallery/saiyan.png",
-    alt: "Camiseta branca com estampa Saiyan",
+    alt: "Light tee with anime-inspired graphic",
     mobileOrder: "order-0",
     desktopOrder: "md:order-0",
   },
   {
     src: "/design-gallery/supreme-bart.png",
-    alt: "Camiseta preta com estampa Supreme",
+    alt: "Dark tee with cartoon-led streetwear graphic",
     mobileOrder: "order-1",
     desktopOrder: "md:order-1",
   },
   {
     src: "/design-gallery/nike-abstract.png",
-    alt: "Camiseta preta com estampa Nike",
+    alt: "Dark tee with abstract sportswear graphic",
     mobileOrder: "order-2",
     desktopOrder: "md:order-3",
   },
   {
     src: "/design-gallery/mickey-adidas.png",
-    alt: "Camiseta branca com estampa Mickey Adidas",
+    alt: "Light tee with character remix graphic",
     mobileOrder: "order-3",
     desktopOrder: "md:order-2",
   },
   {
     src: "/design-gallery/minnie-nike.png",
-    alt: "Camiseta branca com estampa Minnie Nike",
+    alt: "Light tee with fashion-led character graphic",
     mobileOrder: "order-4",
     desktopOrder: "md:order-5",
   },
   {
     src: "/design-gallery/pikachu-nike.png",
-    alt: "Camiseta preta com estampa Pikachu Nike",
+    alt: "Dark tee with mascot-inspired graphic",
     mobileOrder: "order-5",
     desktopOrder: "md:order-4",
   },
   {
     src: "/design-gallery/hand-supreme.png",
-    alt: "Camiseta preta com estampa Supreme",
+    alt: "Dark tee with bold logo-led graphic",
     mobileOrder: "order-6",
     desktopOrder: "md:order-6",
   },
   {
     src: "/design-gallery/stitch-nike.png",
-    alt: "Camiseta branca com estampa Stitch Nike",
+    alt: "Light tee with playful street graphic",
     mobileOrder: "order-7",
     desktopOrder: "md:order-7",
   },
   {
     src: "/design-gallery/homer-nike.png",
-    alt: "Camiseta branca com estampa Nike divertida",
+    alt: "Light tee with pop-inspired apparel graphic",
     mobileOrder: "order-8",
     desktopOrder: "md:order-8",
   },
   {
     src: "/design-gallery/snorlax-nike.png",
-    alt: "Camiseta preta com estampa Snorlax Nike",
+    alt: "Dark tee with oversized character graphic",
     mobileOrder: "order-9",
     desktopOrder: "md:order-9",
   },
   {
     src: "/design-gallery/adidas-originals.png",
-    alt: "Camiseta preta com estampa Adidas Originals",
+    alt: "Dark tee with archival sportswear graphic",
     mobileOrder: "order-10",
     desktopOrder: "md:order-11",
   },
   {
     src: "/design-gallery/stitch-supreme.png",
-    alt: "Camiseta branca com estampa Stitch Supreme",
+    alt: "Light tee with cartoon streetwear composition",
     mobileOrder: "order-11",
     desktopOrder: "md:order-10",
   },
@@ -84,24 +84,24 @@ export default function DesignGallery() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div className="max-w-2xl">
             <h2 className="text-4xl md:text-6xl font-black text-white italic uppercase tracking-tighter leading-none mb-4">
-              GALERIA DE <span className="text-purple-500">ESTAMPAS</span>
+              Inside the <span className="text-purple-500">collection</span>
             </h2>
             <p className="text-gray-500 text-lg font-medium">
-              Uma prévia das mais de 1.200 artes exclusivas que você recebe. Alta resolução, fundos transparentes e arquivos prontos para baixar.
+              A selected preview from the archive. Fashion-led compositions, clean files, and apparel-ready artwork built
+              to move from concept to release faster.
             </p>
           </div>
-          <div className="bg-white/5 border border-white/10 px-6 py-3 rounded-2xl flex items-center gap-4">
-            <div className="flex -space-x-4">
-              {[1, 2, 3, 4].map((i) => (
-                <div
-                  key={i}
-                  className="w-10 h-10 rounded-full border-2 border-black bg-gray-800 flex items-center justify-center overflow-hidden"
-                >
-                  <img src={`https://i.pravatar.cc/100?u=${i}`} alt="" referrerPolicy="no-referrer" />
-                </div>
-              ))}
-            </div>
-            <span className="text-white text-xs font-black uppercase tracking-widest">+500 Clientes satisfeitos</span>
+          <div className="grid grid-cols-3 gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-center sm:px-6">
+            {[
+              { value: "1,200+", label: "Graphics" },
+              { value: "PNG +", label: "Vector" },
+              { value: "24/7", label: "Access" },
+            ].map((item) => (
+              <div key={item.label} className="min-w-[72px]">
+                <p className="text-sm font-black uppercase tracking-wide text-white">{item.value}</p>
+                <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-500">{item.label}</p>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -126,7 +126,7 @@ export default function DesignGallery() {
         </div>
 
         <div className="mt-12 flex justify-center px-2 sm:mt-14">
-          <AcquireCtaButton complement="40% OFF HOJE!" />
+          <AcquireCtaButton complement="One-time payment. Lifetime access." />
         </div>
       </div>
     </section>

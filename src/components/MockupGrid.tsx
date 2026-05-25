@@ -64,14 +64,15 @@ export default function MockupGrid() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black text-white mb-4">
-            POTENCIAL ILIMITADO PARA SUA MARCA
+            See the archive in context
           </h2>
           <div className="text-gray-500 max-w-2xl mx-auto text-lg space-y-4">
             <p>
-              O Criativarts Brands entrega um verdadeiro arsenal de estampas em alta resolução, prontas para usar em PNG e vetores editáveis.
+              A visual library built for storefronts, launch campaigns, lookbooks, and fast-moving apparel workflows.
             </p>
             <p>
-              São mais de 20 marcas reconhecidas como Nike, Adidas, Gucci, Vans, Louis Vuitton e muitas outras, combinadas com mais de 100 personagens icônicos para criar estampas únicas, originais e altamente atrativas para seus clientes.
+              Inside the collection you will find sportswear-inspired layouts, mascot-led graphics, bold compositions,
+              and product-ready artwork prepared for real-world use.
             </p>
           </div>
         </div>
@@ -80,7 +81,7 @@ export default function MockupGrid() {
           <button
             type="button"
             onClick={goPrev}
-            aria-label="Anterior"
+            aria-label="Previous"
             className="absolute left-0 top-1/2 z-20 -translate-y-1/2 flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-black/70 text-white shadow-lg backdrop-blur-md transition hover:border-white/30 hover:bg-white/10 md:h-12 md:w-12"
           >
             <ChevronLeft className="h-6 w-6" strokeWidth={2} />
@@ -88,7 +89,7 @@ export default function MockupGrid() {
           <button
             type="button"
             onClick={goNext}
-            aria-label="Próximo"
+            aria-label="Next"
             className="absolute right-0 top-1/2 z-20 -translate-y-1/2 flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-black/70 text-white shadow-lg backdrop-blur-md transition hover:border-white/30 hover:bg-white/10 md:h-12 md:w-12"
           >
             <ChevronRight className="h-6 w-6" strokeWidth={2} />
@@ -113,7 +114,7 @@ export default function MockupGrid() {
                   >
                     <img
                       src={src}
-                      alt={`Mockup de camiseta ${i + 1}`}
+                      alt={`Apparel mockup preview ${i + 1}`}
                       className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                       draggable={false}
                     />

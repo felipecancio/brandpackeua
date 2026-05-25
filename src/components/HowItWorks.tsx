@@ -2,18 +2,38 @@ import { motion } from "motion/react";
 import { UserPlus, Mail, Download, Rocket } from "lucide-react";
 
 const steps = [
-  { icon: <UserPlus />, title: "Passo 1", text: "Faça seu pagamento de forma rápida e segura.", label: "COMPRA" },
-  { icon: <Mail />, title: "Passo 2", text: "Receba o link de acesso diretamente no seu e-mail.", label: "ACESSO" },
-  { icon: <Download />, title: "Passo 3", text: "Baixe os arquivos completos agora ou quando quiser, com acesso vitalício.", label: "DOWNLOAD" },
-  { icon: <Rocket />, title: "Passo 4", text: "Comece a criar, inovar e aumentar suas vendas a partir de hoje.", label: "VENDA" },
+  {
+    icon: <UserPlus />,
+    title: "Secure checkout",
+    text: "Complete your order through a protected checkout in minutes.",
+    label: "CHECKOUT",
+  },
+  {
+    icon: <Mail />,
+    title: "Instant delivery",
+    text: "Receive your access link by email right after purchase.",
+    label: "ACCESS",
+  },
+  {
+    icon: <Download />,
+    title: "Browse and download",
+    text: "Explore organized folders and download what you need, when you need it.",
+    label: "LIBRARY",
+  },
+  {
+    icon: <Rocket />,
+    title: "Start creating",
+    text: "Use the assets for launches, client work, or everyday content production.",
+    label: "CREATE",
+  },
 ];
 
 export default function HowItWorks() {
   return (
-    <section className="py-24 bg-[#0a0a0a]" id="metodo">
+    <section className="py-24 bg-[#0a0a0a]" id="how-it-works">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black text-white mb-4 italic uppercase">COMO FUNCIONA?</h2>
+          <h2 className="text-3xl md:text-5xl font-black text-white mb-4 italic uppercase">Access in four steps</h2>
           <div className="w-24 h-1 bg-white mx-auto rounded-full" />
         </div>
 

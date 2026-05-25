@@ -1,46 +1,30 @@
 import { motion } from "motion/react";
-import { Star, BadgeCheck } from "lucide-react";
+import { Package, Printer, Rocket } from "lucide-react";
 
-const testimonials = [
+const profiles = [
   {
-    quote:
-      "Trabalho com DTF há alguns anos e nunca tinha recebido arquivos tão limpos. As bordas saem perfeitas, as cores ficam vivas e meus clientes percebem a diferença na hora. Dá para ver que não é material genérico.",
-    name: "André Moraes",
-    place: "Belo Horizonte, MG",
-    avatar: "/testimonials/1.png",
+    icon: <Package className="h-6 w-6" />,
+    label: "Independent brands",
+    title: "Develop drops faster",
+    text: "Build capsule collections, evergreen staples, and launch visuals without starting every concept from a blank file.",
   },
   {
-    quote:
-      "A variedade de estilos salvou minha coleção. Antes eu passava horas procurando referência; agora abro as pastas e encontro anime, marcas, memes e muita coisa pronta para vender. Minha lojinha já aumentou bem os pedidos.",
-    name: "Maria Pereira",
-    place: "Campinas, SP",
-    avatar: "/testimonials/2.png",
+    icon: <Printer className="h-6 w-6" />,
+    label: "Print studios",
+    title: "Keep production moving",
+    text: "Use organized, high-resolution assets that are easier to place, preview, and hand off across real print workflows.",
   },
   {
-    quote:
-      "Comprei achando que poderia ser mais um pacote comum da internet, mas a licença comercial e o acesso pelo Drive me convenceram. Atendo marcas pequenas e o tempo que economizo criando artes eu uso para fechar mais vendas.",
-    name: "Ricardo Mendes",
-    place: "Curitiba, PR",
-    avatar: "/testimonials/3.png",
+    icon: <Rocket className="h-6 w-6" />,
+    label: "POD sellers",
+    title: "Launch with better visuals",
+    text: "Create stronger product pages, faster storefront updates, and cleaner creative tests for on-demand catalogs.",
   },
 ];
 
-function StarRow() {
-  return (
-    <div className="flex gap-0.5" aria-hidden>
-      {Array.from({ length: 5 }).map((_, i) => (
-        <Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" strokeWidth={0} />
-      ))}
-    </div>
-  );
-}
-
 export default function ClientTestimonials() {
   return (
-    <section
-      className="relative border-y border-white/5 bg-[#050505] py-20 sm:py-24 overflow-hidden"
-      id="testimonios"
-    >
+    <section className="relative overflow-hidden border-y border-white/5 bg-[#050505] py-20 sm:py-24" id="creators">
       <div className="pointer-events-none absolute left-1/4 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-purple-600/15 blur-[100px]" />
       <div className="pointer-events-none absolute bottom-0 right-1/4 h-64 w-64 translate-x-1/2 rounded-full bg-blue-600/10 blur-[90px]" />
 
@@ -52,21 +36,20 @@ export default function ClientTestimonials() {
           transition={{ duration: 0.5 }}
           className="mb-12 text-center sm:mb-14"
         >
-          <p className="mb-3 text-[10px] font-black uppercase tracking-[0.35em] text-purple-400">
-            Experiências reais
-          </p>
+          <p className="mb-3 text-[10px] font-black uppercase tracking-[0.35em] text-purple-400">Built for creators</p>
           <h2 className="text-3xl font-black uppercase italic tracking-tighter text-white sm:text-4xl md:text-5xl">
-            O que dizem <span className="text-gray-500">quem já usa</span>
+            Made for modern <span className="text-gray-500">apparel workflows</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base text-gray-500 sm:text-lg">
-            Estamparias, marcas independentes e empreendedores brasileiros. Depoimentos com linguagem real, de quem vende todos os dias.
+            Whether you run a fashion label, fulfill print orders, or sell on demand, the archive is designed to speed
+            up output without lowering your visual standard.
           </p>
         </motion.div>
 
         <div className="flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:gap-6">
-          {testimonials.map((t, index) => (
+          {profiles.map((profile, index) => (
             <motion.article
-              key={t.name}
+              key={profile.label}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
@@ -74,40 +57,14 @@ export default function ClientTestimonials() {
               className="group relative flex flex-col rounded-3xl border border-white/10 bg-white/[0.02] p-6 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.8)] backdrop-blur-sm sm:p-7 lg:p-8"
             >
               <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-purple-500/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-              <div className="mb-4 flex items-center justify-between gap-3">
-                <StarRow />
-                <span className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-gray-500">
-                  Verificado
-                  <BadgeCheck
-                    className="h-4 w-4 shrink-0 fill-sky-500 text-sky-600"
-                    strokeWidth={1.5}
-                    aria-hidden
-                  />
-                </span>
+
+              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/5 text-white transition-colors group-hover:bg-white group-hover:text-black">
+                {profile.icon}
               </div>
 
-              <blockquote className="flex-1 text-[15px] leading-relaxed text-gray-300 sm:text-base">
-                <p>
-                  <span className="mr-1 font-serif text-2xl leading-none text-purple-500/50">&ldquo;</span>
-                  {t.quote}
-                  <span className="font-serif text-2xl leading-none text-purple-500/50">&rdquo;</span>
-                </p>
-              </blockquote>
-
-              <div className="mt-6 flex items-center gap-4 border-t border-white/10 pt-6">
-                <img
-                  src={t.avatar}
-                  alt=""
-                  width={52}
-                  height={52}
-                  className="h-[52px] w-[52px] shrink-0 rounded-2xl object-cover ring-2 ring-white/10"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="min-w-0 text-left">
-                  <p className="truncate font-black text-white">{t.name}</p>
-                  <p className="text-xs font-medium text-gray-500">{t.place}</p>
-                </div>
-              </div>
+              <div className="mb-3 text-[10px] font-black uppercase tracking-[0.25em] text-gray-500">{profile.label}</div>
+              <h3 className="text-2xl font-black uppercase italic tracking-tight text-white">{profile.title}</h3>
+              <p className="mt-4 text-[15px] leading-relaxed text-gray-400 sm:text-base">{profile.text}</p>
             </motion.article>
           ))}
         </div>

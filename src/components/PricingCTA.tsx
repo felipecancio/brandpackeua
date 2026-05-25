@@ -3,7 +3,7 @@ import { Check, Star, Zap, Shield, Rocket } from "lucide-react";
 
 export default function PricingCTA() {
   return (
-    <section className="scroll-mt-24 py-24 bg-black relative overflow-hidden" id="comprar">
+    <section className="scroll-mt-24 py-24 bg-black relative overflow-hidden" id="access">
       {/* Background radial glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-emerald-600/10 rounded-full blur-[160px] pointer-events-none" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_50%,rgba(16,185,129,0.08),transparent)]" />
@@ -13,15 +13,15 @@ export default function PricingCTA() {
           <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-emerald-400/40 to-transparent" />
           <div className="pointer-events-none absolute inset-x-12 -top-20 h-32 rounded-full bg-emerald-500/10 blur-[60px]" />
           <div className="relative inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-400/20 text-[10px] font-black text-white mb-8 tracking-[.2em] uppercase">
-            <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" /> OFERTA POR TEMPO LIMITADO
+            <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" /> Full archive access
           </div>
 
           <h2 className="mb-4 text-3xl font-black uppercase italic leading-tight tracking-wide text-white sm:mb-6 md:text-5xl md:leading-snug">
             <span className="flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 md:gap-x-3">
-              <span>ACESSO</span>
-              <span>COMPLETO</span>
-              <span>POR</span>
-              <span>APENAS</span>
+              <span>ENTER</span>
+              <span>THE</span>
+              <span>ARCHIVE</span>
+              <span>FOR</span>
               <span className="inline-block bg-gradient-to-r from-lime-300 via-emerald-400 to-green-600 bg-clip-text pb-1 pr-1 text-transparent not-italic tracking-normal md:pr-1.5">
                 $8 USD
               </span>
@@ -29,17 +29,18 @@ export default function PricingCTA() {
           </h2>
 
           <p className="mx-auto mb-8 max-w-none text-base font-medium text-gray-400 sm:mb-10 sm:max-w-2xl sm:text-lg">
-            Acesso imediato às mais de 1.200 estampas, bônus exclusivos, atualizações e suporte. Sem mensalidades. Sem custos escondidos.
+            Everything in one place: curated apparel graphics, editable formats, included mockups, and lifetime access
+            to the library. No subscription required.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-xl mx-auto mb-12">
             {[
-              "Mockups prontos das estampas aplicadas",
-              "Arquivos PNG + PDF Vetor",
-              "Licença comercial incluída",
-              "Acesso vitalício via Google Drive",
-              "Suporte personalizado",
-              "Atualizações gratuitas",
+              "1,200+ apparel graphics",
+              "PNG + vector-ready files",
+              "Included mockups and visual catalog",
+              "Commercial use on physical products",
+              "Lifetime access to the library",
+              "Instant delivery after checkout",
             ].map((text, i) => (
               <div key={i} className="flex items-center gap-3 text-gray-300 font-bold text-sm">
                 <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
@@ -84,15 +85,15 @@ export default function PricingCTA() {
             className="relative w-full sm:w-auto inline-flex bg-gradient-to-br from-emerald-400 via-green-500 to-emerald-700 text-white px-8 py-5 text-xl sm:px-12 sm:py-6 sm:text-2xl rounded-2xl font-black items-center justify-center gap-2 sm:gap-3 border border-emerald-300/40 mb-6 uppercase shadow-[inset_0_1px_0_rgba(255,255,255,0.25)] hover:from-emerald-300 hover:via-green-400 hover:to-emerald-600 transition-colors whitespace-nowrap"
           >
             <Zap className="h-7 w-7 shrink-0 fill-white text-white sm:h-8 sm:w-8" />
-            COMPRAR AGORA
+            Get Full Access
           </motion.a>
 
           <div className="flex flex-nowrap justify-center items-center gap-3 sm:gap-6 opacity-40 max-sm:text-[10px] sm:text-xs">
             <div className="flex shrink-0 items-center gap-1.5 text-white font-bold uppercase tracking-wide sm:tracking-widest sm:gap-2">
-              <Shield className="h-3.5 w-3.5 shrink-0 sm:h-4 sm:w-4" /> Pagamento 100% Seguro
+              <Shield className="h-3.5 w-3.5 shrink-0 sm:h-4 sm:w-4" /> Secure checkout
             </div>
             <div className="flex shrink-0 items-center gap-1.5 text-white font-bold uppercase tracking-wide sm:tracking-widest sm:gap-2">
-              <Rocket className="h-3.5 w-3.5 shrink-0 sm:h-4 sm:w-4" /> Entrega Imediata
+              <Rocket className="h-3.5 w-3.5 shrink-0 sm:h-4 sm:w-4" /> Instant delivery
             </div>
           </div>
         </div>

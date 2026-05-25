@@ -3,32 +3,32 @@ import { CheckCircle2, Sparkles } from "lucide-react";
 
 const bonuses = [
   {
-    tag: "BÔNUS #1",
-    title: "Mockups Profissionais Prontos para Usar",
+    tag: "Included Extra 01",
+    title: "Presentation Mockups",
     image: "/bonus-images/bonus-mockups.png",
-    imageAlt: "Mockup profissional de camiseta com estampa aplicada",
+    imageAlt: "Premium apparel mockup presentation",
     description:
-      "Receba uma coleção de mockups premium com artes do pack já aplicadas em camisetas e produtos reais, ideais para publicar em redes sociais, lojas online e anúncios.",
+      "A set of ready-to-use apparel mockups for product pages, launch posts, and cleaner visual presentation.",
     bullets: [
-      "Mockups realistas e modernos",
-      "Ideais para Instagram e e-commerce",
-      "Economiza tempo nas apresentações",
-      "Melhora a percepção profissional da sua marca",
+      "Modern apparel scenes",
+      "Useful for storefronts and social campaigns",
+      "Speeds up launch preparation",
+      "Helps concepts feel more product-ready",
     ],
     glow: "from-emerald-500/20 via-green-500/10 to-transparent",
   },
   {
-    tag: "BÔNUS #2",
-    title: "Catálogo de Amostras do Pack",
+    tag: "Included Extra 02",
+    title: "Visual Reference Catalog",
     image: "/bonus-images/bonus-catalogo.png",
-    imageAlt: "Catálogo visual com amostras de estampas do pack",
+    imageAlt: "Visual catalog with collection references",
     description:
-      "Receba um catálogo visual com uma seleção organizada de estampas incluídas no material para explorar rapidamente os estilos e artes disponíveis.",
+      "A fast visual overview of the archive so you can spot directions, styles, and compositions without digging through every folder first.",
     bullets: [
-      "Prévia organizada do conteúdo",
-      "Facilita a busca por estampas",
-      "Inspiração rápida para novos produtos",
-      "Acesso visual imediato ao material",
+      "Clear preview of the collection",
+      "Makes discovery faster",
+      "Useful for planning new releases",
+      "Immediate visual reference",
     ],
     glow: "from-purple-500/20 via-blue-500/10 to-transparent",
   },
@@ -36,7 +36,7 @@ const bonuses = [
 
 export default function ExclusiveBonuses() {
   return (
-    <section className="relative overflow-hidden bg-[#050505] py-24" id="bonos">
+    <section className="relative overflow-hidden bg-[#050505] py-24" id="extras">
       <div className="pointer-events-none absolute left-0 top-1/4 h-96 w-96 -translate-x-1/2 rounded-full bg-emerald-600/10 blur-[140px]" />
       <div className="pointer-events-none absolute bottom-0 right-0 h-96 w-96 translate-x-1/3 rounded-full bg-purple-600/10 blur-[140px]" />
 
@@ -50,11 +50,11 @@ export default function ExclusiveBonuses() {
         >
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-[10px] font-black uppercase tracking-[0.25em] text-white">
             <Sparkles className="h-3.5 w-3.5 fill-yellow-400 text-yellow-400" />
-            BÔNUS EXCLUSIVOS
+            Included with access
           </div>
 
           <h2 className="text-4xl font-black uppercase italic leading-none tracking-tighter text-white md:text-6xl">
-            Você também recebe estes bônus especiais
+            Included extras for a cleaner workflow
           </h2>
         </motion.div>
 
@@ -116,11 +116,11 @@ export default function ExclusiveBonuses() {
         >
           <div className="pointer-events-none absolute inset-x-12 -top-24 h-40 rounded-full bg-emerald-400/10 blur-[70px]" />
           <p className="relative z-10 text-base font-black leading-relaxed text-white sm:text-lg">
-            Todos os bônus estão incluídos gratuitamente com seu acesso completo e vitalício ao{" "}
+            Both extras are included with full access to the{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-300 via-emerald-400 to-green-500">
               Brands Pack
             </span>
-            .
+            archive.
           </p>
         </motion.div>
       </div>

@@ -3,7 +3,7 @@ import type { MouseEvent } from "react";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const WA_NUMBER = "5522998455928";
-const WA_MESSAGE = "Quero saber mais sobre o Brands Pack";
+const WA_MESSAGE = "Hi, I would like to learn more about Brands Pack.";
 
 function waUrl() {
   return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(WA_MESSAGE)}`;
@@ -65,7 +65,7 @@ export default function WhatsAppFloat() {
             onClick={onBubbleClick}
             className="max-w-[220px] cursor-pointer rounded-2xl border border-white/10 bg-zinc-950/95 px-4 py-3 text-center text-sm font-medium text-white shadow-[0_12px_40px_rgba(0,0,0,0.45)] backdrop-blur-md ring-1 ring-white/5 transition hover:border-white/15 hover:bg-zinc-900/95"
           >
-            Tirar dúvidas
+            Need help?
           </motion.button>
         )}
       </AnimatePresence>
@@ -75,7 +75,7 @@ export default function WhatsAppFloat() {
         onClick={onFabClick}
         whileHover={{ scale: 1.04 }}
         whileTap={{ scale: 0.96 }}
-        aria-label={preview ? "Abrir WhatsApp" : "Atendimento por WhatsApp"}
+        aria-label={preview ? "Open WhatsApp" : "WhatsApp support"}
         className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_4px_24px_rgba(37,211,102,0.35)] ring-2 ring-white/10 transition hover:bg-[#20bd5a] hover:shadow-[0_6px_28px_rgba(37,211,102,0.45)] sm:h-14 sm:w-14"
       >
         <WhatsAppGlyph className="h-6 w-6 sm:h-7 sm:w-7" aria-hidden />

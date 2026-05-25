@@ -10,7 +10,7 @@ export default function AcquireCtaButton({ className = "", complement }: Acquire
   return (
     <div className="flex w-full max-w-md flex-col items-center gap-2.5 sm:gap-3">
       <motion.a
-        href="#comprar"
+        href="#access"
         animate={{
           boxShadow: [
             "0 0 0 0 rgba(16, 185, 129, 0.32), 0 10px 36px rgba(5, 150, 105, 0.42)",
@@ -39,10 +39,10 @@ export default function AcquireCtaButton({ className = "", complement }: Acquire
         }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.97 }}
-        className={`relative inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-emerald-300/40 bg-gradient-to-br from-emerald-400 via-green-500 to-emerald-700 px-6 py-4 text-base font-black uppercase text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.25)] transition-colors hover:from-emerald-300 hover:via-green-400 hover:to-emerald-600 sm:w-auto sm:gap-3 sm:px-10 sm:py-5 sm:text-xl ${className}`}
+        className={`relative inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-emerald-300/40 bg-gradient-to-br from-emerald-400 via-green-500 to-emerald-700 px-6 py-4 text-base font-black text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.25)] transition-colors hover:from-emerald-300 hover:via-green-400 hover:to-emerald-600 sm:w-auto sm:gap-3 sm:px-10 sm:py-5 sm:text-xl ${className}`}
       >
         <Zap className="h-6 w-6 shrink-0 fill-white text-white sm:h-7 sm:w-7" />
-        QUERO ADQUIRIR
+        Unlock Access
       </motion.a>
 
       {complement ? (

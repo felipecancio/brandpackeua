@@ -3,9 +3,9 @@ import { ArrowRight, CheckCircle2, Download } from "lucide-react";
 
 const checklist = [
   { label: "PNG + Vector", icon: <CheckCircle2 className="w-4 h-4 shrink-0 text-green-500" /> },
-  { label: "Acesso Vitalício", icon: <CheckCircle2 className="w-4 h-4 shrink-0 text-green-500" /> },
-  { label: "Alta Resolução", icon: <CheckCircle2 className="w-4 h-4 shrink-0 text-green-500" /> },
-  { label: "Estampas Originais", icon: <CheckCircle2 className="w-4 h-4 shrink-0 text-green-500" /> },
+  { label: "Lifetime access", icon: <CheckCircle2 className="w-4 h-4 shrink-0 text-green-500" /> },
+  { label: "High resolution", icon: <CheckCircle2 className="w-4 h-4 shrink-0 text-green-500" /> },
+  { label: "Organized library", icon: <CheckCircle2 className="w-4 h-4 shrink-0 text-green-500" /> },
 ];
 
 export default function Hero() {
@@ -26,18 +26,20 @@ export default function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-bold text-white mb-6">
               <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-              ACESSO RÁPIDO, PRÁTICO E VITALÍCIO
+              CURATED APPAREL GRAPHICS ARCHIVE
             </div>
 
             <h1 className="text-5xl md:text-7xl font-black text-white leading-none mb-6 tracking-tight">
-              SEU ACERVO DEFINITIVO <br />
+              The premium archive <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-red-500 to-rose-950">
-                DE ESTAMPAS PREMIUM
+                for modern apparel brands
               </span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-400 mb-0 max-w-lg leading-relaxed lg:mb-8">
-              Leve seu negócio de estampas para o próximo nível. Tenha acesso a uma coleção exclusiva com mais de 1.200 artes inspiradas nas marcas mais populares do mercado, combinadas com a originalidade de personagens icônicos.
+              Access a curated collection of apparel-ready visuals built for streetwear labels, POD stores, print
+              studios, and design-led launches. High-resolution files, editable formats, and lifetime access in one
+              clean library.
             </p>
           </motion.div>
 
@@ -59,7 +61,7 @@ export default function Hero() {
                   ease: "easeInOut",
                 }}
                 src="/hero-brands-pack-mockup.png"
-                alt="Criativarts Brands Pack Mockup"
+                alt="Brands Pack archive mockup preview"
                 className="w-full h-auto object-contain drop-shadow-[0_20px_45px_rgba(0,0,0,0.35),0_0_70px_rgba(168,85,247,0.3)]"
               />
             </div>
@@ -76,7 +78,7 @@ export default function Hero() {
           >
             <div className="flex flex-col gap-4 max-lg:mb-0 mb-10 sm:flex-row sm:flex-nowrap lg:mb-10">
               <motion.a
-                href="#comprar"
+                href="#access"
                 animate={{
                   boxShadow: [
                     "0 0 0 0 rgba(16, 185, 129, 0.35), 0 10px 32px rgba(5, 150, 105, 0.4)",
@@ -94,13 +96,13 @@ export default function Hero() {
                 whileTap={{ scale: 0.97 }}
                 className="relative shrink-0 whitespace-nowrap inline-flex bg-gradient-to-br from-emerald-400 via-green-500 to-emerald-700 px-6 py-4 text-base font-black text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.25)] transition-colors hover:from-emerald-300 hover:via-green-400 hover:to-emerald-600 items-center justify-center gap-2 rounded-2xl border border-emerald-300/40 lg:px-8 lg:text-lg"
               >
-                QUERO O PACK <ArrowRight className="h-5 w-5 shrink-0 text-white" />
+                Unlock Access <ArrowRight className="h-5 w-5 shrink-0 text-white" />
               </motion.a>
               <a
                 href="#gallery"
                 className="shrink-0 whitespace-nowrap rounded-2xl border border-transparent bg-white px-6 py-4 text-base font-bold text-black shadow-[0_0_20px_rgba(255,255,255,0.15)] transition-all hover:bg-gray-200 flex items-center justify-center gap-2 lg:px-8 lg:text-lg"
               >
-                VER ESTAMPAS <Download className="h-5 w-5 shrink-0 text-black" />
+                Explore the Collection <Download className="h-5 w-5 shrink-0 text-black" />
               </a>
             </div>
 
