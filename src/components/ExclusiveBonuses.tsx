@@ -120,7 +120,7 @@ export default function ExclusiveBonuses() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-300 via-emerald-400 to-green-500">
               Brands Pack
             </span>
-            archive.
+            {" "}archive.
           </p>
         </motion.div>
       </div>

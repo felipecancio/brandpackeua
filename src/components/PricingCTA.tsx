@@ -23,7 +23,7 @@ export default function PricingCTA() {
               <span>ARCHIVE</span>
               <span>FOR</span>
               <span className="inline-block bg-gradient-to-r from-lime-300 via-emerald-400 to-green-600 bg-clip-text pb-1 pr-1 text-transparent not-italic tracking-normal md:pr-1.5">
-                $8 USD
+                $9.99 USD
               </span>
             </span>
           </h2>
@@ -52,7 +52,7 @@ export default function PricingCTA() {
           </div>
 
           <motion.a
-            href="https://pay.hotmart.com/P104382859N?off=9iitp1xa&checkoutMode=10"
+            href="https://pay.hotmart.com/P104382859N?off=4f36ap0g&checkoutMode=10"
             rel="noopener noreferrer"
             animate={{
               boxShadow: [
